@@ -64,6 +64,8 @@ p {
   position: absolute;
 }
 .figures div:nth-of-type(1) {
+  max-width: 374px;
+  max-height: 374px;
   width: 26vw;
   height: 26vw;
   top: -7%;
@@ -78,6 +80,8 @@ p {
   background-color: grey;
 } */
 .figures div:nth-of-type(2) {
+  max-width: 273px;
+  max-height: 273px;
   width: 19vw;
   height: 19vw;
   top: -6%;
@@ -85,6 +89,8 @@ p {
   animation: gradient 6s linear alternate infinite;
 }
 .figures div:nth-of-type(3) {
+  max-width: 202px;
+  max-height: 202px;
   width: 14vw;
   height: 14vw;
   top: 42%;
@@ -92,6 +98,8 @@ p {
   animation: blink 3s linear alternate infinite;
 }
 .figures div:nth-of-type(4) {
+  max-width: 187px;
+  max-height: 187px;
   width: 13vw;
   height: 13vw;
   top: 34%;
@@ -99,6 +107,8 @@ p {
   animation: gradient 3s linear alternate infinite;
 }
 .figures div:nth-of-type(5) {
+  max-width: 274px;
+  max-height: 274px;
   width: 19vw;
   height: 19vw;
   top: 67%;
@@ -106,6 +116,8 @@ p {
   animation: gradient 5s linear alternate infinite;
 }
 .figures div:nth-of-type(6) {
+  max-width: 259px;
+  max-height: 259px;
   width: 18vw;
   height: 18vw;
   top: 64%;
@@ -116,6 +128,8 @@ p {
   position: absolute;
 }
 .figures img:nth-of-type(1) {
+  max-width: 360px;
+  max-height: 288px;
   width: 25vw;
   height: 20vw;
   top: 32%;
@@ -123,6 +137,8 @@ p {
   animation: blink 7s linear alternate infinite;
 }
 .figures img:nth-of-type(2) {
+  max-width: 317px;
+  max-height: 302px;
   width: 22vw;
   height: 21vw;
   top: 2%;
@@ -130,6 +146,8 @@ p {
   animation: blink 8s linear alternate infinite;
 }
 .figures img:nth-of-type(3) {
+  max-width: 374px;
+  max-height: 317px;
   width: 26vw;
   height: 22vw;
   top: 0%;
@@ -137,6 +155,8 @@ p {
   animation: blink 3s linear alternate infinite;
 }
 .figures img:nth-of-type(4) {
+  max-width: 331px;
+  max-height: 259px;
   width: 23vw;
   height: 18vw;
   top: 34%;
@@ -144,6 +164,8 @@ p {
   animation: blink 5s linear alternate infinite;
 }
 .figures img:nth-of-type(5) {
+  max-width: 317px;
+  max-height: 302px;
   width: 22vw;
   height: 21vw;
   top: 68%;
@@ -151,6 +173,8 @@ p {
   animation: blink 7s linear alternate infinite;
 }
 .figures img:nth-of-type(6) {
+  max-width: 317px;
+  max-height: 302px;
   width: 22vw;
   height: 21vw;
   top: 59%;
@@ -246,10 +270,10 @@ p {
   width: 3286px;
 }
 .viktortsoi-stroka:nth-of-type(2n) {
-  animation: tsoirow 8s linear reverse infinite;
+  animation: tsoirow 6s linear reverse infinite;
 }
 .viktortsoi-stroka:nth-of-type(2n+1) {
-  animation: tsoirow 8s linear infinite;
+  animation: tsoirow 6s linear infinite;
 }
 .viktortsoi-stroka:nth-of-type(1) {
   top: 2vw;
@@ -279,15 +303,17 @@ p {
   top: 42vw;
 }
 @keyframes tsoirow {
-  0% {right: -1643px}
-  100% {right: calc(100% - 1440px)}
+  0% {left: 0%}
+  100% {left: -50%}
 }
 .viktortsoi-photo {
   position: absolute;
   top: 9vw;
   right: 7vw;
-  width: 655px;
-  height: 655px;
+  max-width: 655px;
+  max-height: 655px;
+  width: 45vw;
+  height: 45vw;
   background-image: url('../images/tsoi1.svg');
   background-size: cover;
   background-position: center;
@@ -317,10 +343,10 @@ p {
   color: #9DBEB7;
 }
 .yanka_dyagileva-stroka:nth-of-type(2n) {
-  animation: y-row 8s linear reverse infinite;
+  animation: y-row 6s linear reverse infinite;
 }
 .yanka_dyagileva-stroka:nth-of-type(2n+1) {
-  animation: y-row 8s linear infinite;
+  animation: y-row 6s linear infinite;
 }
 .yanka_dyagileva-stroka:nth-of-type(1) {
   top: 1vw;
@@ -353,8 +379,8 @@ p {
   top: 46vw;
 }
 @keyframes y-row {
-  0% {right: -1504px;}
-  100% {right: calc(100% - 1440px)}
+  0% {left: 0%}
+  100% {left: -50%}
 }
 .yanka_dyagileva-mask img {
   position: absolute;
@@ -366,8 +392,10 @@ p {
   position: absolute;
   top: 11vw;
   left: 2vw;
-  width: 655px;
-  height: 655px;
+  max-width: 655px;
+  max-height: 655px;
+  width: 45vw;
+  height: 45vw;
   transition: .5s;
   background-image: url("../images/yanka1.svg")
 }
@@ -414,10 +442,10 @@ p {
   color: #E73213;
 }
 .gorshenev-stroka:nth-of-type(2n) {
-  animation: g-row 8s linear reverse infinite;
+  animation: g-row 6s linear reverse infinite;
 }
 .gorshenev-stroka:nth-of-type(2n+1) {
-  animation: g-row 8s linear infinite;
+  animation: g-row 6s linear infinite;
 }
 .gorshenev-stroka:nth-of-type(1) {
   top: 1vw;
@@ -460,15 +488,17 @@ p {
   height: 49vw;
 }
 @keyframes g-row {
-  0% {right: -2296px}
-  100% {right: calc(100% - 1440px)}
+  0% {left: 0%}
+  100% {left: -50%}
 }
 .gorshenev-photo {
   position: absolute;
   top: 9vw;
   left: 51vw;
-  width: 655px;
-  height: 655px;
+  max-width: 655px;
+  max-height: 655px;
+  width: 45vw;
+  height: 45vw;
   background-image: url('../images/gorshenev1.svg');
   transition: .5s;
 }
