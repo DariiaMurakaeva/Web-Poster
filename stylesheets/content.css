@@ -396,6 +396,9 @@ p {
   max-height: 655px;
   width: 45vw;
   height: 45vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: .5s;
   background-image: url("../images/yanka1.svg")
 }
@@ -499,6 +502,9 @@ p {
   max-height: 655px;
   width: 45vw;
   height: 45vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url('../images/gorshenev1.svg');
   transition: .5s;
 }
